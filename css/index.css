@@ -1,0 +1,20 @@
+.index-content-bg{
+    padding-top: 11rem;
+    background-image: url("../images/bg_photo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* min-height: 50rem; */
+    padding-bottom: 10%;
+}
+.content-devider{
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    border-color: #9e908c;
+}
+.index-see-more{
+    margin-bottom: 20px;
+}
+.index-see-more a{
+    color: #ffffff;
+
+}

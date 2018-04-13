@@ -1,0 +1,98 @@
+/* 全局头部导航 */
+/* logo样式风格 */
+
+/* 全局头部导航 */
+
+
+/* 全局底部导航 */
+.footer_main{
+    color: #c6c6c6;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+.footer_main{
+    color: #c6c6c6;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: black;
+}
+
+.footer-logo{
+    padding-left: 1.5rem;
+}
+.footer_right-input input{
+    background-color: black;
+    color: #7d7d7d;
+}
+.footer_right-input button{
+    background-color: #3b4d5c;
+    
+}
+.footer_right-input span{
+    color: #c6c6c6;
+    
+}
+
+/* 全局底部导航 */
+/* 全局颜色 */
+.white-bgcolor{
+    background-color: white;
+}
+.am-grid-color{
+    background-color: #f8f8f8;
+}
+
+/* 全局分页 */
+.page-bar {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.page-button-disabled {
+    color:#ddd !important;
+}
+
+.page-bar li {
+    list-style: none;
+    display: inline-block;
+}
+
+.page-bar li:first-child > a {
+    margin-left: 0px;
+}
+
+.page-bar a {
+    border: 1px solid #ddd;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+.page-bar a:hover {
+    background-color: #eee;
+}
+
+.page-bar .active a {
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.page-bar i {
+    font-style: normal;
+    color: #d44950;
+    margin: 0px 4px;
+    font-size: 12px;
+}
+/* 全局分页 */

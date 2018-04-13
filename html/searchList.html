@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 开发版本 -->
+  <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css">
+  <!-- 线上压缩版本 -->
+  <!-- <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.min.css"> -->
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/searchList.css">
+  <title>搜索列表</title>
+</head>
+
+<body>
+  <!-- 头部导航 -->
+  <header class="am-topbar am-topbar-fixed-top">
+    <div class="am-u-sm-8  am-u-sm-centered">
+      <h1 class="am-topbar-brand">
+        <img src="../images/sitemap_logo.png" alt="">
+      </h1>
+
+      <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+        <span class="am-sr-only">导航切换</span>
+        <span class="am-icon-bars"></span>
+      </button>
+
+      <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+          <li class="am-dropdown" data-am-dropdown>
+            <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+              500强
+              <span class="am-icon-caret-down"></span>
+            </a>
+            <ul class="am-dropdown-content">
+              <li class="am-dropdown-header">标题</li>
+              <li>
+                <a href="#">1. 去月球</a>
+              </li>
+              <li class="am-active">
+                <a href="#">2. 去火星</a>
+              </li>
+              <li>
+                <a href="#">3. 还是回地球</a>
+              </li>
+              <li class="am-disabled">
+                <a href="#">4. 下地狱</a>
+              </li>
+              <li class="am-divider"></li>
+              <li>
+                <a href="#">5. 桥头一回首</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="am-dropdown" data-am-dropdown>
+            <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+              排行榜
+              <span class="am-icon-caret-down"></span>
+            </a>
+            <ul class="am-dropdown-content">
+              <li class="am-dropdown-header">标题</li>
+              <li>
+                <a href="#">1. 去月球</a>
+              </li>
+              <li class="am-active">
+                <a href="#">2. 去火星</a>
+              </li>
+              <li>
+                <a href="#">3. 还是回地球</a>
+              </li>
+              <li class="am-disabled">
+                <a href="#">4. 下地狱</a>
+              </li>
+              <li class="am-divider"></li>
+              <li>
+                <a href="#">5. 桥头一回首</a>
+              </li>
+            </ul>
+          </li>
+          <li class="am-dropdown" data-am-dropdown>
+            <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+              上市公司
+              <span class="am-icon-caret-down"></span>
+            </a>
+            <ul class="am-dropdown-content">
+              <li class="am-dropdown-header">标题</li>
+              <li>
+                <a href="#">1. 去月球</a>
+              </li>
+              <li class="am-active">
+                <a href="#">2. 去火星</a>
+              </li>
+              <li>
+                <a href="#">3. 还是回地球</a>
+              </li>
+              <li class="am-disabled">
+                <a href="#">4. 下地狱</a>
+              </li>
+              <li class="am-divider"></li>
+              <li>
+                <a href="#">5. 桥头一回首</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">新三板</a>
+          </li>
+        </ul>
+        <div class="am-topbar-right">
+
+          <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li>
+              <a href="#">登陆</a>
+            </li>
+
+
+            <li>
+              <a href="#">注册</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- 头部导航 -->
+
+  <!-- 内容区域 -->
+  <div class="am-g  ">
+    <div class="am-u-sm-8  am-u-sm-centered ">
+      
+        <div class="am-input-group searchList-input-group am-u-sm-6">
+          <span class="am-input-group-btn">
+              <select data-am-selected>
+                  <option value="a">list</option>
+                  <option value="b" selected>images</option>
+                </select>
+          </span>
+          <input type="text" class="am-form-field" placeholder="示例：500强企业">
+          <span class="am-input-group-btn">
+            <button class="am-btn am-btn-secondary" type="button">Search</button>
+          </span>
+        </div>
+      </div>
+
+
+    </div>
+  
+    <!-- 条件筛选区域 -->
+    <div class="am-g"> 
+      <div class="am-u-sm-8  am-u-sm-centered">
+          <div class="am-panel am-panel-default am-panel-noborder" id="accordion">
+              <div class="am-panel-hd" data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}"> <span  ><i class="am-icon-angle-down am-icon-sm"></i> </span> 条件筛选</div>
+              <div class="am-panel-bd  am-in" id="do-not-say-1">
+                  <div class="am-panel am-panel-default am-panel-noborder "> 
+                        <div class="filter">
+                          <div class="container">
+                              <div class="box">
+                                <dl class="am-cf title-h">
+                                  <dt class="">已选条件：</dt>
+                                  <dd class="selected-box">
+                                     
+                                      
+                                  </dd>
+                                  <dd class="clear-all" style="display:none;"><a class="am-icon-trash">清除已选 </a></dd>
+                              </dl>
+                              <dl class="am-cf">
+                                  <dt>搜索范围：</dt>
+                                  <dd>
+                                      <a  class="sx_child">企业名称</a>
+                                      <a  class="sx_child">股东</a>
+                                      <a  class="sx_child">法人代表</a>
+                                      <a  class="sx_child">高管</a>
+                                      <a  class="sx_child">上市公司</a>
+                                      <a  class="sx_child">社会组织</a>
+                                      <a  class="sx_child">联系方式</a>
+                                      <a  class="sx_child">经济范围</a>
+                                      <a  class="sx_child">网址</a>
+                                      <a  class="sx_child">产品</a>
+                                      <a  class="sx_child">商标</a>
+                                  </dd>
+                              </dl>
+                              <dl class="am-cf">
+                                  <dt>注册资本：</dt>
+                                  <dd>
+                                      <a href="#"  class="sx_child">0-100万&nbsp;</a>
+                                      <a href="#"  class="sx_child">100万-200万&nbsp;</a>
+                                      <a href="#"  class="sx_child">200万-500万&nbsp;</a>
+                                      <a href="#"  class="sx_child">500万-1000万&nbsp;</a>
+                                      <a href="#"  class="sx_child">1000万以上&nbsp;</a>
+                                      
+                                  </dd>
+                              </dl>
+                              <dl class="am-cf">
+                                  <dt>员工人数：</dt>
+                                  <dd>
+                                      <a href="#"  class="sx_child">0-500人</a>
+                                      <a href="#"  class="sx_child">500-1000人</a>
+                                      <a href="#"  class="sx_child">1000-5000人</a>
+                                      <a href="#"  class="sx_child">5000-10000</a>
+                                      <a href="#"  class="sx_child">10000人以上</a>
+                                      
+                                  </dd>
+                              </dl>
+                              <dl class="am-cf">
+                                  <dt>营业额：</dt>
+                                  <dd>
+                                      <a href="#" class="sx_child">0-100万 </a>
+                                      <a href="#" class="sx_child">100万-200万 </a>
+                                      <a href="#" class="sx_child">200万-500万 </a>
+                                      <a href="#" class="sx_child">500万-1000万 </a>
+                                      <a href="#" class="sx_child">1000万以上 </a>
+                                  </dd>
+                              </dl>
+                              <dl class="am-cf">
+                                  <dt>行业：</dt>
+                                  <dd class="content-body ">
+                                      <a href="#"  class="sx_child">农副食品加工业</a>
+                                      <a href="#"  class="sx_child">食品制造业</a>
+                                      <a href="#"  class="sx_child">酒，饮料和精制茶制造业</a>
+                                      <a href="#"  class="sx_child">烟草制品业</a>
+                                      <a href="#"  class="sx_child">纺织业</a>
+                                      <a href="#"  class="sx_child">皮革，毛皮，羽毛及其制品和制鞋业</a>
+                                      <a href="#"  class="sx_child">木材加工和木，竹，藤，棕，草制品业</a>
+                                      <a href="#"  class="sx_child">家具制造业</a>
+                                      <a href="#"  class="sx_child">造纸和纸制品业</a>
+                                      <a href="#"  class="sx_child">印刷和记录媒介复制业</a>
+                                      <a href="#"  class="sx_child">文教，工美，体育和娱乐用品制造业</a>
+                                      <a href="#"  class="sx_child">石油，煤炭，及其他燃料加工业</a>
+                                      <a href="#"  class="sx_child">化学原料和化学制品制造业</a>
+                                      <a href="#"  class="sx_child">医药制造业</a>
+                                      <a href="#"  class="sx_child">化学纤维制造业</a>
+                                      <a href="#"  class="sx_child">橡胶和塑料制品业</a>
+                                      <a href="#"  class="sx_child">非金属矿物制品业</a>
+                                      <a href="#"  class="sx_child">黑色金属冶炼和压延加工业</a>
+                                      <a href="#"  class="sx_child">有色金属冶炼和压延加工业</a>
+                                      <a href="#"  class="sx_child">金属制品业</a>
+                                      <a href="#"  class="sx_child">通用设备制造业</a>
+                                      <a href="#"  class="sx_child">专用设备制造业</a>
+                                      <a href="#"  class="sx_child">汽车制造业</a>
+                                      <a href="#"  class="sx_child">电气机械和器材制造业</a>
+                                      <a href="#"  class="sx_child">铁路，船舶，航空航天和其他运输设备制造业</a>
+                                      <a href="#"  class="sx_child">废弃资源综合利用业</a>
+                                      <a href="#"  class="sx_child">计算机，通信，和其他电子设备制造业</a>
+                                      <a href="#"  class="sx_child">仪器仪表制造业</a>
+                                      <a href="#"  class="sx_child">其他制造业</a>
+                                      <a href="#"  class="sx_child">金属制品，机械和设备修理业</a>
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                  </dd>
+                                  <dd class="show-more" ><a  class="am-icon-angle-down ">更多 </a></dd>
+                              </dl>
+                              <dl class="am-cf">
+                                  <dt>成立时间</dt>
+                                  <dd>
+                                      <a href="#" rel="最近一天" name="date" class="sx_child">1-5年</a>
+                                      <a href="#" rel="最近三天" name="date" class="sx_child">5-10年</a>
+                                      <a href="#" rel="最近一周" name="date" class="sx_child">10-15年</a>
+                                      <a href="#" rel="最近两周" name="date" class="sx_child">15年以上</a>
+                                  </dd>
+                              </dl>
+                              <dl class="am-cf">
+                                <dt >注册地区：</dt>
+                                <dd class="content-body">
+                                  <a href="#"  class="sx_child">北京</a>
+                                  <a href="#" class="sx_child">天津</a>
+                                  <a href="#" class="sx_child">上海</a>
+                                  <a href="#" class="sx_child">重庆</a>
+                                  <a href="#" class="sx_child">河北</a>
+                                  <a href="#" class="sx_child">山西</a>
+                                  <a href="#" class="sx_child">辽宁</a>
+                                  <a href="#" class="sx_child">吉林</a>
+                                  <a href="#" class="sx_child">黑龙江</a>
+                                  <a href="#" class="sx_child">江苏</a>
+                                  <a href="#" class="sx_child">浙江</a>
+                                  <a href="#" class="sx_child">安徽</a>
+                                  <a href="#" class="sx_child">福建</a>
+                                  <a href="#" class="sx_child">江西</a>
+                                  <a href="#" class="sx_child">山东</a>
+                                  <a href="#" class="sx_child">河南</a>
+                                  <a href="#" class="sx_child">湖北</a>
+                                  <a href="#" class="sx_child">湖南</a>
+                                  <a href="#" class="sx_child">广东</a>
+                                  <a href="#" class="sx_child">海南</a>
+                                  <a href="#" class="sx_child">四川</a>
+                                  <a href="#" class="sx_child">山东</a>
+                                  <a href="#" class="sx_child">贵州</a>
+                                  <a href="#" class="sx_child">山西</a>
+                                  <a href="#" class="sx_child">云南</a>
+                                  <a href="#" class="sx_child">西藏</a>
+                                  <a href="#" class="sx_child">陕西</a>
+                                  <a href="#" class="sx_child">甘肃</a>
+                                  <a href="#" class="sx_child">青海</a>
+                                  <a href="#" class="sx_child">内蒙古</a>
+                                  <a href="#" class="sx_child">广西</a>
+                                  <a href="#" class="sx_child">西藏</a>
+                                  <a href="#" class="sx_child">宁夏</a>
+                                  <a href="#" class="sx_child">新疆</a>
+                                  <a href="#" class="sx_child">香港</a>
+                                  <a href="#" class="sx_child">澳门</a>
+                                  <a href="#" class="sx_child">台湾</a>
+                               
+                                </dd>
+                                <dd class="show-more"><a  class="am-icon-angle-down">更多 </a></dd>
+                              </dl>
+                              </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <!-- 展示列表 -->
+            
+              <div class="am-u-sm-8 am-u-sm-centered">
+                 <div class="news-content-warp ">
+                  <div class="am-panel am-panel-default am-panel-noborder  " >
+                    <div class="am-panel-hd white-bgcolor " > 
+                      <span> 找到<span class="am-text-danger">3000</span>符合条件的企业      
+                      <button class="am-btn  am-btn-primary am-fr">导出数据</button>
+                      <span class=" am-fr">
+                          <select data-am-selected>
+                              <option value="a">排序A-Z</option>
+                              <option value="b" selected>排序Z-A</option>
+                            </select>
+                      </span>
+                      
+                    </span>
+                      </div>
+                    <div class="am-panel-bd">
+                        <div class="matched-company">
+                          <div class="title"> <span >大连亿家衣服装有限公司</span> <span class="am-fr"><a href="">查看</a></span> </div>
+                          <div class="description"> <span>法定代表人：<span class="name">谢永林</span> </span> <span>注册资本：<span>18500万</span></span> <span>成立时间：<span>1987-12-1</span> </span> </div>
+                          <div class="description"> <span>电话：<span>0755-3208-6508</span> </span> <span>邮箱：<span>zxcv@qq.com</span></span>  </div>
+                          <div class="description"> <span>地址：<span>辽宁省大连市甘井子区华北路991号403室</span> </span> </div>
+                        </div>
+                        <div class="matched-company">
+                            <div class="title"> <span >大连亿家衣服装有限公司</span> <span class="am-fr"><a href="">查看</a></span> </div>
+                            <div class="description"> <span>法定代表人：<span class="name">谢永林</span> </span> <span>注册资本：<span>18500万</span></span> <span>成立时间：<span>1987-12-1</span> </span> </div>
+                            <div class="description"> <span>电话：<span>0755-3208-6508</span> </span> <span>邮箱：<span>zxcv@qq.com</span></span>  </div>
+                            <div class="description"> <span>地址：<span>辽宁省大连市甘井子区华北路991号403室</span> </span> </div>
+                          </div>
+                          <div class="matched-company">
+                              <div class="title"> <span >大连亿家衣服装有限公司</span> <span class="am-fr"><a href="">查看</a></span> </div>
+                              <div class="description"> <span>法定代表人：<span class="name">谢永林</span> </span> <span>注册资本：<span>18500万</span></span> <span>成立时间：<span>1987-12-1</span> </span> </div>
+                              <div class="description"> <span>电话：<span>0755-3208-6508</span> </span> <span>邮箱：<span>zxcv@qq.com</span></span>  </div>
+                              <div class="description"> <span>地址：<span>辽宁省大连市甘井子区华北路991号403室</span> </span> </div>
+                            </div>
+                            <div class="matched-company">
+                                <div class="title"> <span >大连亿家衣服装有限公司</span> <span class="am-fr"><a href="">查看</a></span> </div>
+                                <div class="description"> <span>法定代表人：<span class="name">谢永林</span> </span> <span>注册资本：<span>18500万</span></span> <span>成立时间：<span>1987-12-1</span> </span> </div>
+                                <div class="description"> <span>电话：<span>0755-3208-6508</span> </span> <span>邮箱：<span>zxcv@qq.com</span></span>  </div>
+                                <div class="description"> <span>地址：<span>辽宁省大连市甘井子区华北路991号403室</span> </span> </div>
+                              </div>
+                    </div>
+                 </div>
+              </div>
+      <!-- 条件筛选区域 -->
+  </div>
+</div>
+  <!--内容区域  -->
+    <!-- 底部导航 -->
+    <div class="layout-footer">
+        <div class="container ">
+            <div class="footer_main ">
+                <div class="am-g am-u-sm-8 am-u-sm-centered">
+                    <p class="footer-logo">
+                        <img src="../images/foot_gomine_logo.png" alt="">
+                    </p>
+                    <div class="am-u-md-6">
+                        <div >
+                            <p>
+                                Rm.B-702,Bldg.1,Zhubang 2000 Business Center, No。100 Balizhuang Xili, Chaoyang District,Beijing
+                            </p>
+                            <p>
+                                <a href="">
+                                    <i class="am-icon-phone"></i> +86-10-87510736</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="">
+                                    <i class="am-icon-envelope-o"></i> marketing@gomine.cn</a>
+                            </p>
+                            <p>Copyright©GOMINE.CN All right Reserved.京ICP备05075516号</p>
+                        </div>
+                    </div>
+                    <div class="am-u-md-6 ">
+                        <strong>
+                            <p> subscribe for upgrates</p>
+                        </strong>
+                        <div>
+                            <p>
+                                <div class="am-input-group am-btn-group-lg">
+                                    <input type="text" class="am-form-field" placeholder="enter your email address">
+                                    <span class="am-input-group-btn footer_right-input">
+                                        <button class="am-btn am-btn-default " type="button">
+                                            <span class="am-icon-envelope-o"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部导航 -->
+  <!-- 开发版本 -->
+  <script src="../js/jquery/jquery-3.3.1.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <script src="../js/searchList.js"></script>
+  
+  <!-- 线上压缩版本 -->
+  <!-- <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.min.js"></script> -->
+</body>
+
+</html>
